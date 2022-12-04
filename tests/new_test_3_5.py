@@ -8,7 +8,7 @@ def test_form():
     browser.element('#lastName').type('Bisengalieva')
     browser.element('#userEmail').type('test@email.com')
     browser.element('[for="gender-radio-2"]').click()
-    browser.element('#userNumber').type('89877777777')
+    browser.element('#userNumber').type('1234567890')
     browser.element('#dateOfBirthInput').click()
     browser.element('.react-datepicker__month-select').type("June")
     browser.element('.react-datepicker__year-select').type("1995")
@@ -25,7 +25,7 @@ def test_form():
          'Asel Bisengalieva',
          'test@email.com',
          'Female',
-         '89877777777',
+         '1234567890',
          '24 June,1995',
          'Computer Science',
          'Reading',
