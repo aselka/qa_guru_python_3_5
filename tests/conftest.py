@@ -13,3 +13,4 @@ def browser_management():
     ads.should(have.size_less_than_or_equal(3))
     ads.perform(command.js.remove)
     yield
+    browser.close()
