@@ -15,7 +15,8 @@ def test_form():
     browser.element('[aria-label="Choose Saturday, June 24th, 1995"]').click()
     browser.element('#subjectsInput').type('Computer Science').press_enter()
     browser.element('[for="hobbies-checkbox-2"]').click()
-    browser.element('#uploadPicture').send_keys(os.path.abspath('../files/foto.jpg'))
+    browser.element('#uploadPicture').set_value(
+        os.path.abspath(os.path.join(os.path.dirname(__file__), os.path.pardir, 'files/foto.jpg')))
     browser.element('#currentAddress').type('Saratov')
     browser.element('#react-select-3-input').type('Haryana').press_enter()
     browser.element('#react-select-4-input').type('Panipat').press_enter()
