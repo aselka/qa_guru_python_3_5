@@ -25,7 +25,7 @@ def test_submit_form():
     
     browser.element('#submit').press_enter()
 
-    browser.all('.table-responsive td:nth-child(2)').should(have.texts(
+    browser.element('.table').all('td').even.should(have.texts(
          'Asel Bisengalieva',
          'test@email.com',
          'Female',
